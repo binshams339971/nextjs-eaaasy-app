@@ -1,0 +1,30 @@
+.footer {
+    min-height: 220px;
+    background-color: #E7EAEE;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.footerContent {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+    padding-top: 20px;
+}
+
+.impress {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.copyRight {
+    font-size: 10px;
+    color: #979797;
+    margin-top: 10px;
+}

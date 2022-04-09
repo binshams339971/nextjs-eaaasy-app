@@ -1,0 +1,47 @@
+.headerTop {
+    margin-top: 0px;
+    min-height: 90px;
+    background-color: rgba(50, 86, 84, 1);
+    border-radius: 0px 0px 9.88979px 9.15721px;
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerBottom {
+    height: 70px;
+    margin-top: -15px;
+    background-color: rgba(57, 57, 57, 1);
+    z-index: 0;
+}
+
+.menuBar {
+    font-size: 30px;
+    color: rgba(227, 252, 82, 1);
+}
+
+.menuBar:hover {
+    color: rgba(227, 252, 82, 1);
+}
+
+.feedBack {
+    font-size: 16px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.feedBack:hover {
+    color: rgb(255, 255, 255);
+}
+
+.feedBackIcon {
+    font-size: 22px;
+    margin-right: 10px;
+    color: rgba(227, 252, 82, 1);
+}
