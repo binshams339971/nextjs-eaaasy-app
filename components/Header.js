@@ -8,14 +8,17 @@ const Header = () => {
     return (
         <>
             <div className={`${styles.headerTop}`}>
-                <Image src='/eaaasy.png' width={150} height={70} />
+                <Link href="/">
+                    <Image src='/eaaasy.png' width={150} height={70} style={{ cursor: "pointer" }} />
+                </Link>
+
             </div>
             <div className={`${styles.headerBottom}`}>
                 <div className='container pt-3 d-flex justify-content-between'>
                     <Link href="/">
                         <a className={`${styles.menuBar}`}><BsList /></a>
                     </Link>
-                    <Link href="/">
+                    <Link href="/feedback">
                         <a className={`${styles.feedBack}`}>
                             <BsFillChatLeftTextFill className={`${styles.feedBackIcon}`} />Feedback</a>
                     </Link>
