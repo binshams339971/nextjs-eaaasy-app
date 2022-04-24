@@ -14,3 +14,48 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+button.rec-dot {
+  display: none;
+}
+
+button.rec-dot:hover,
+button.rec-dot:active,
+button.rec-dot:focus {
+  display: none;
+}
+
+.rec-dot_active {
+  display: none;
+  background-color: rgba(50, 86, 84, 1) !important;
+  box-shadow: 0 0 1px 3px rgba(50, 86, 84, 1) !important;
+}
+
+.rec-dot:focus,
+.rec-dot:hover {
+  display: none;
+  box-shadow: 0 0 1px 3px rgba(50, 86, 84, 1) !important;
+}
+
+.rec-dot_active:focus,
+.rec-dot_active:hover {
+  display: none;
+  background-color: rgba(50, 86, 84, 1) !important;
+  box-shadow: 0 0 1px 3px rgba(50, 86, 84, 1) !important;
+}
+
+.rec-arrow {
+  background-color: rgba(50, 86, 84, 1) !important;
+  transition: all 0.3s ease;
+  font-size: 1rem !important;
+  color: white !important;
+  width: 1.7rem !important;
+  height: 1.75rem !important;
+  min-width: 1.7rem !important;
+  line-height: 0px !important;
+}
+
+.rec-arrow:hover:not(:disabled) {
+  transform: scale(1.1);
+}
