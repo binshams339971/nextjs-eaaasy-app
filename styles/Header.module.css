@@ -5,7 +5,6 @@
     border-radius: 0px 0px 9.88979px 9.15721px;
     position: relative;
     z-index: 1;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -20,9 +19,14 @@
     z-index: 0;
 }
 
+.bar {
+    cursor: pointer;
+}
+
 .menuBar {
     font-size: 30px;
     color: rgba(227, 252, 82, 1);
+    cursor: pointer;
 }
 
 .menuBar:hover {

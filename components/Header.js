@@ -26,10 +26,16 @@ const Header = () => {
 
                     <a onClick={handleMenuBar} className={`${styles.menuBar}`}><BsList /></a>
 
+
+                    <Link href="/signin">
+                        <a className={`${styles.feedBack}`}>
+                            <BsFillChatLeftTextFill className={`${styles.feedBackIcon}`} />Signin</a>
+                    </Link>
                     <Link href="/feedback">
                         <a className={`${styles.feedBack}`}>
                             <BsFillChatLeftTextFill className={`${styles.feedBackIcon}`} />Feedback</a>
                     </Link>
+
                 </div>
             </div>
             {show == true ? <Sidebar clickHandler={handleMenuBar} width="250px" show={show} /> : <Sidebar width="0px" />}
