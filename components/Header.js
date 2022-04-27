@@ -17,14 +17,14 @@ const Header = () => {
         <>
             <div className={`${styles.headerTop}`}>
                 <Link href="/">
-                    <Image src='/eaaasy.png' width={150} height={70} style={{ cursor: "pointer" }} />
+                    <a><Image src='/eaaasy.png' width={150} height={70} style={{ cursor: "pointer" }} /></a>
                 </Link>
 
             </div>
             <div className={`${styles.headerBottom}`}>
                 <div className='container pt-3 d-flex justify-content-between'>
 
-                    <a href="javascript:void(0)" onClick={handleMenuBar} className={`${styles.menuBar}`}><BsList /></a>
+                    <a onClick={handleMenuBar} className={`${styles.menuBar}`}><BsList /></a>
 
                     <Link href="/feedback">
                         <a className={`${styles.feedBack}`}>

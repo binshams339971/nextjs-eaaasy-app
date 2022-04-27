@@ -14,14 +14,14 @@ const Feedback = () => {
                 <ul className={`${styles.ul}`}>
                     <li className={styles.li}>
                         <input type="radio" className={styles.input} id="f-option" value="yes" onChange={(e) => { setRadio(e.target.value) }} name="selector" />
-                        <label for="f-option" className={styles.label}>Ja, ist hilfreich Produktinfos auf einen Blick zu sehen</label>
+                        <label htmlFor="f-option" className={styles.label}>Ja, ist hilfreich Produktinfos auf einen Blick zu sehen</label>
 
                         <div className={styles.check}></div>
                     </li>
 
                     <li className={styles.li}>
                         <input type="radio" id="s-option" value="no" onChange={(e) => { setRadio(e.target.value) }} name="selector" />
-                        <label for="s-option">Nein, ist nicht hilfreich</label>
+                        <label htmlFor="s-option">Nein, ist nicht hilfreich</label>
 
                         <div className={styles.check}></div>
                     </li>
