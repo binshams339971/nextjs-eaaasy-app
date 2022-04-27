@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css'
 import brandService from '../service/BrandService'
 import productService from '../service/ProductService'
 import Carousel from 'react-elastic-carousel';
+import { BallTriangle } from 'react-loader-spinner'
 
 export default function Home() {
   let [product, setProduct] = useState([]);
@@ -78,7 +79,16 @@ export default function Home() {
             </div>
           </>
         )
-        : <h3>Loading...</h3>}
-    </div>
+        :
+        <div className='loadingSpinner'>
+          <BallTriangle
+            heigth="50"
+            width="50"
+            color="green"
+            ariaLabel="loading-indicator"
+          />
+        </div>
+      }
+    </div >
   )
 }
